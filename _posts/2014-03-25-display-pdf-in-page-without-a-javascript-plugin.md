@@ -9,7 +9,7 @@ There are cases where a PDF file is more than a download link and you need to di
 
 If you need a really lightweight solution and you don’t mind if the users with browsers that don’t support PDF viewing, don’t view the document, here’s a snippet you may use
 
-```javascript
+{% highlight javascript %}
 /**
  * When browser supports inline pdfs
  * There is no need to append a large jquery plugin that displays them inline.
@@ -30,13 +30,13 @@ function appendPdf(id, url) {
     }
  }
 
- ```
+{% endhighlight %}
 
 What we do here is check if the browser has a plugin for a certain mime type (the check
 
-```javascript
+{% highlight javascript %}
 navigator.mimeTypes['application/pdf']
-```
+{% endhighlight %}
 
 will return undefined if the browser doesn’t have a plugin for that mime type). If the browser does support PDF, we append a simple iframe that can be styled and sized accordingly, or append a link to download the file if the browser doesn’t have a handler for PDFs.
 

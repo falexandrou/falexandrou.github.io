@@ -7,7 +7,7 @@ If you prefer a virtualized environment for your web development purposes, you m
 
 One thing you may need to setup first would be turning off the sendfile option in your web server, otherwise you might end up getting corrupt static files such as javascript or css files. This is actually a VirtualBox bug, as it was documented in Vagrant’s v1.1 documentation and here’s a simple solution to that:
 
-```bash
+{% highlight bash %}
 # A VirtualBox bug forces vagrant to serve
 # corrupt files via Apache or nginx
 # The solution to that would be to turn off
@@ -22,4 +22,4 @@ EnableSendfile off
 # If you use nginx as your main web server
 # add this directive in your nginx.conf
 sendfile off
-```
+{% endhighlight %}
