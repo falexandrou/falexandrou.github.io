@@ -17,4 +17,4 @@ paginate: 5
 exclude: ["node_modules"]
 
 # Plugins
-gems: [ "pygments.rb", "jekyll-mentions", "jekyll-sitemap" ]
+gems: [ "pygments.rb", "jekyll-mentions", "jekyll-sitemap", "jemoji" ]
