@@ -2,6 +2,7 @@
 layout: post
 title: How GitHub Uses GitHub to Build GitHub
 header-img: "img/home-bg.jpg"
+author: Fotis
 ---
 
 This is probably the presentation I've read the most while going through SpeakerDeck or SlideShare. I love GitHub both as a software product and philosophy as a team, so I try to read as much as i can related to them.

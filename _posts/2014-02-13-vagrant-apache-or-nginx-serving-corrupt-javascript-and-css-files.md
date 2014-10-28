@@ -2,6 +2,7 @@
 layout: post
 title: Vagrant Apache or nginx serving corrupt Javascript and CSS files
 header-img: "img/home-bg.jpg"
+author: Fotis
 ---
 
 If you prefer a virtualized environment for your web development purposes, you may find Vagrant a really handy solution. Vagrant is a fantastic tool that creates a virtual machine which can be provisioned with Chef or Puppet and be re-packaged for future distribution.

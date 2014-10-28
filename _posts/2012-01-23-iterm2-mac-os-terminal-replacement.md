@@ -2,6 +2,7 @@
 layout: post
 title: iTerm2 + Oh My ZSH!
 header-img: "img/home-bg.jpg"
+author: Fotis
 ---
 
 If you're anything like me, you're probably dealing a lot with the terminal. I use it all the time because i'm working with Git and lots of branches, i create cron jobs and console applications, so i need a pretty good terminal.

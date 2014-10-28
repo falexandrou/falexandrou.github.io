@@ -2,6 +2,7 @@
 layout: post
 title: Display PDF in-page without a javascript plugin
 header-img: "img/home-bg.jpg"
+author: Fotis
 ---
 
 
