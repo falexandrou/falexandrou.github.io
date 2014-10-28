@@ -2,12 +2,13 @@
 title: Fotis Alexandrou
 email: alfotis@yahoo.gr
 description: "Tales of a Web Developer"
-#baseurl: "http://falexandrou.github.io"
+baseurl: "http://falexandrou.github.io"
 url: "http://falexandrou.com"
 twitter_username: falexandrou
 github_username:  falexandrou
 facebook_username:  falexandrou
 linkedin_profile: http://gr.linkedin.com/in/falexandrou
+google_analytics: "UA-649986-28"
 
 # Build settings
 markdown: kramdown
