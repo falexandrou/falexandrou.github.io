@@ -2,8 +2,8 @@
 title: Fotis Alexandrou
 email: alfotis@yahoo.gr
 description: "Tales of a Web Developer"
-baseurl: "http://falexandrou.github.io"
-url: "http://falexandrou.com"
+baseurl: ""
+url: "/"
 twitter_username: falexandrou
 github_username:  falexandrou
 facebook_username:  falexandrou
@@ -13,7 +13,7 @@ google_analytics: "UA-649986-28"
 # Build settings
 markdown: kramdown
 permalink: pretty
-paginate: 5
+paginate: 15
 exclude: ["node_modules"]
 
 # Plugins
