@@ -7,19 +7,19 @@
 
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/clean-blog.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/clean-blog.css" | prepend: site.baseurl | prepend: site.url }}">
 
-    <meta property="og:url" content="{{ page.url | prepend: site.baseurl }}">
+    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:image" content="{{ "/img/me.jpg" | prepend: site.baseurl }}">
+    <meta property="og:image" content="{{ "/img/me.jpg" | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="720">
     <meta property="og:image:height" content="720">
@@ -28,8 +28,8 @@
     <meta name="twitter:site" content="@falexandrou" />
     <meta name="twitter:title" content="Fotis Alexandrou - Personal blog" />
     <meta name="twitter:description" content="Read the post on Foti's blog" />
-    <meta name="twitter:image" content="{{ "/img/me.jpg" | prepend: site.baseurl }}" />
-    <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl }}" />
+    <meta name="twitter:image" content="{{ "/img/me.jpg" | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
