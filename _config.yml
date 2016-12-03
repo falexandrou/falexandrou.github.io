@@ -15,8 +15,7 @@ markdown: kramdown
 permalink: pretty
 paginate: 15
 timezone: Europe/Athens
-exclude: ["node_modules"]
-relative_permalinks: true
+exclude: ["node_modules", "vendor"]
 
 # Plugins
 gems: [ "jekyll-mentions", "jekyll-sitemap", "jemoji", "jekyll-paginate" ]
