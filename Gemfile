@@ -1,5 +1,2 @@
 source 'https://rubygems.org'
-gem 'jekyll-mentions'
-gem 'jekyll-paginate'
 gem 'github-pages'
-gem 'jemoji'

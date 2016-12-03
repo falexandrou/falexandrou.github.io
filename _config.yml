@@ -16,6 +16,7 @@ permalink: pretty
 paginate: 15
 timezone: Europe/Athens
 exclude: ["node_modules"]
+relative_permalinks: true
 
 # Plugins
 gems: [ "jekyll-mentions", "jekyll-sitemap", "jemoji", "jekyll-paginate" ]

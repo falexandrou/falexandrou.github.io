@@ -135,9 +135,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-mentions
-  jekyll-paginate
-  jemoji
 
 BUNDLED WITH
    1.12.5
