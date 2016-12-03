@@ -1,5 +1,6 @@
 @import "variables.less";
 @import "mixins.less";
+@import "highlighting.less";
 
 // Global Components
 
@@ -157,8 +158,8 @@ hr.small {
 // Header
 
 .intro-header {
-	background-color: @gray; 
-	background: no-repeat center center; 
+	background-color: @gray;
+	background: no-repeat center center;
 	background-attachment: scroll;
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
@@ -460,4 +461,11 @@ img::-moz-selection {
 
 body {
 	webkit-tap-highlight-color: @brand-primary;
+}
+
+body {
+  code {
+    color: #333;
+    background-color: #f5f5f5;
+  }
 }

@@ -1,23 +1,29 @@
 ---
 layout: page
 description: "Tales of a web developer"
+title: "Fotis Alexandrou - Senior Web Developer - Blog"
+short_title: "Home"
 header-img: "img/home-bg.jpg"
 ---
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
+      <h2 class="post-title">
+          {{ post.title }}
+      </h2>
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">
+          {{ post.subtitle }}
+      </h3>
+      {% endif %}
     </a>
+    <p>
+      {{ post.excerpt }}
+    </p>
     <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
-<hr>
+{{ forloop }}
+{% if not forloop.last %}<hr>{% endif %}
 {% endfor %}
 
 <!-- Pager -->
