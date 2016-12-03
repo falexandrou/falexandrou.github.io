@@ -14,9 +14,8 @@ google_analytics: "UA-70676378-1"
 markdown: kramdown
 permalink: pretty
 paginate: 15
-highlighter: rouge
 timezone: Europe/Athens
 exclude: ["node_modules"]
 
 # Plugins
-gems: [ "pygments.rb", "rouge", "jekyll-mentions", "jekyll-sitemap", "jemoji", "jekyll-paginate" ]
+gems: [ "jekyll-mentions", "jekyll-sitemap", "jemoji", "jekyll-paginate" ]
