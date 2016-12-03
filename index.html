@@ -22,8 +22,7 @@ header-img: "img/home-bg.jpg"
     </p>
     <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
-{{ forloop }}
-{% if not forloop.last %}<hr>{% endif %}
+<hr>
 {% endfor %}
 
 <!-- Pager -->
