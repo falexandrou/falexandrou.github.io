@@ -201,6 +201,10 @@ form {
 	margin: 0 0 2em 0;
 }
 
+form .actions {
+  margin-top: 1.5em;
+}
+
 label {
 	color: #787878;
 	display: block;
@@ -678,10 +682,6 @@ ul {
 
 			ul.labeled-icons li:first-child {
 				margin-top: 0;
-			}
-
-			ul.labeled-icons li a {
-				color: inherit;
 			}
 
 			ul.labeled-icons li h3 {
@@ -1698,4 +1698,57 @@ article h2 {
 
 img.not-found {
   width: 100%;
+}
+
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.aspect-ratio iframe {
+  position: absolute;
+  border: none;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.four-by-three {
+  padding-bottom: 75%;
+}
+
+.sixteen-by-nine {
+  padding-bottom: 56.25%;
+}
+
+.post-content {
+  margin-bottom: 2.5em;
+}
+
+.post-footer h3 {
+  margin-bottom: .5em;
+}
+
+.post-footer p {
+  margin-bottom: .5em;
+}
+
+.post-footer .actions {
+  margin-bottom: 0;
+}
+
+.footer-title {
+  border-bottom: 1px dotted #49bf9d;
+  color: #49bf9d;
+  margin-bottom: 1em;
+}
+
+.success {
+  border: 1px solid #49bf9d;
+  color: #49bf9d;
+  padding: 1em 2em;
+  background-color: rgba(73, 191, 157, .1);
+  margin-bottom: 2em;
 }

@@ -8,19 +8,20 @@ layout: default
       <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     </header>
 
-    <section>
+    <section class="post-content">
       {{ content }}
     </section>
 
-    <footer>
+    <footer class="post-footer">
+      <h2 class="footer-title">You may also like</h2>
       <div class="row">
       {% if page.previous %}
         <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt">
           <header>
-            <h2><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
+            <h3><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h3>
           </header>
           <section class="content">
-            {{ page.previous.excerpt }}
+            {{ page.previous.content | strip_html | truncatewords: 15 | markdownify }}
           </section>
           <footer>
             <ul class="actions">
@@ -33,10 +34,10 @@ layout: default
       {% if page.next %}
         <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt f-right">
           <header>
-            <h2><a href="{{ page.next.url }}">{{ page.next.title }}</a></h2>
+            <h3><a href="{{ page.next.url }}">{{ page.next.title }}</a></h3>
           </header>
           <section class="content">
-            {{ page.next.excerpt | markdownify }}
+            {{ page.next.content | strip_html | truncatewords: 15 | markdownify }}
           </section>
           <footer>
             <ul class="actions">

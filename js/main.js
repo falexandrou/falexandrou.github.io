@@ -18,6 +18,16 @@
 		xsmall: '(max-width: 480px)'
 	});
 
+  if (window.location.search.indexOf('success=1') > -1) {
+    var $success = $('.js-success');
+    $success.show();
+    setTimeout(function () {
+      $success.fadeOut(300, function () {
+        $success.remove();
+      });
+    }, 5000);
+  }
+
 	$(function() {
 
 		var $window = $(window),

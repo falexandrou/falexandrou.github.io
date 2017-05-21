@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<div id="main">
+  <section id="three">
+    <div class="success js-success" style="display: none;">
+      Your message has been successfully sent.
+    </div>
+
+    <h2>Get In Touch</h2>
+
+    <p>
+      Found anything interesting here? You can drop me a line by filling in the form below, or by sending an email to
+      <a href="mailto:hello@falexandrou.com">hello@falexandrou.com</a>.
+      You can also contact me through my social profiles that are listed here :)
+    </p>
+    <div class="row">
+      <div class="8u 12u$(small)">
+        <form action="https://getsimpleform.com/messages?form_api_token=8ae6bf6e0f5846922036b478772b132e" method="post">
+          <input type="hidden" name="redirect_to" value="{{ site.url }}/contact?success=1" />
+          <div class="row uniform 50%">
+            <div class="6u 12u$(xsmall)">
+              <input type="text" name="name" id="name" placeholder="Name" required />
+            </div>
+            <div class="6u$ 12u$(xsmall)">
+              <input type="email" name="email" id="email" placeholder="Email" required />
+            </div>
+            <div class="12u$">
+              <textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" /></li>
+          </ul>
+        </form>
+      </div>
+      <div class="4u$ 12u$(small)">
+        <ul class="labeled-icons">
+          <li>
+            <h3 class="icon fa-home"></h3>
+            <strong>Athens, Greece</strong>
+          </li>
+          <li>
+            <h3 class="icon fa-envelope-o"></h3>
+            <a href="mailto:hello@falexandrou.com">hello@falexandrou.com</a>
+          </li>
+          {% for account in site.data.social %}
+              <li>
+                <h3 class="icon fa-{{ account.social_icon | slugify }}"></h3>
+                  <a {% if account.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=account.link %}">
+                    {{ account.name }}
+                  </a>
+              </li>
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
