@@ -1,0 +1,21 @@
+# Site settings
+title: Fotis Alexandrou
+email: alfotis@yahoo.gr
+description: "Tales of a Web Developer"
+baseurl: ""
+url: "http://www.falexandrou.com"
+twitter_username: falexandrou
+github_username:  falexandrou
+facebook_username:  falexandrou
+linkedin_profile: http://gr.linkedin.com/in/falexandrou
+google_analytics: "UA-70676378-1"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 15
+timezone: Europe/Athens
+exclude: ["node_modules", "vendor"]
+
+# Plugins
+gems: [ "jekyll-mentions", "jekyll-sitemap", "jemoji", "jekyll-paginate" ]

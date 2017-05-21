@@ -1,42 +1,25 @@
 ---
-layout: page
-description: "Tales of a web developer"
-title: "Fotis Alexandrou - Senior Web Developer - Blog"
-short_title: "Home"
-header-img: "img/home-bg.jpg"
+layout: default
 ---
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-      <h2 class="post-title">
-          {{ post.title }}
-      </h2>
-      {% if post.subtitle %}
-      <h3 class="post-subtitle">
-          {{ post.subtitle }}
-      </h3>
-      {% endif %}
-    </a>
-    <p>
-      {{ post.excerpt }}
-    </p>
-    <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+<div id="main">
+  {% for post in site.posts %}
+  <article>
+      <header>
+        <h2>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h2>
+        <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}{% if post.author %} • by {{ post.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      </header>
+      <section class="content">
+        {{ post.content | strip_html | truncatewords: 40 }}
+      </section>
+      <footer>
+        <ul class="actions">
+          <li><a href="{{ post.url }}" class="button">Read More</a></li>
+        </ul>
+      </footer>
+  </article>
+  {% endfor %}
 </div>
-<hr>
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}

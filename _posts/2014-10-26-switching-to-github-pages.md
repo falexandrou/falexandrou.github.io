@@ -3,6 +3,7 @@ layout: post
 title: Switching to Jekyll GitHub pages
 header-img: "img/home-bg.jpg"
 author: Fotis
+excerpt: How I built this blog and made it super-fast and easy to maintain.
 ---
 
 ## Goal: An easy to maintain personal website

@@ -1,13 +1,41 @@
-# Site settings
+locale: "en-US"
 title: Fotis Alexandrou
-email: alfotis@yahoo.gr
-description: "Tales of a Web Developer"
-baseurl: ""
-url: "http://www.falexandrou.com"
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+google_analytics_key: "UA-70676378-1"
+description: >
+  Tales of a Web Developer
+
+# Author details for the jekyll-seo-tag gem
+author:
+  name: Fotis Alexandrou
+  email: alfotis@yahoo.gr
+  twitter: falexandrou
+
+data:
+  social:
+    - social_icon: github
+      new_window: true
+      link: https://www.github.com/falexandrou
+      name: GitHub Profile
+    - social_icon: linkedin
+      new_window: true
+      link: https://in.linkedin.com/falexandrou
+      name: LinkedIn Profile
+    - social_icon: twitter
+      new_window: true
+      link: https://www.twitter.com/falexandrou
+      name: Twitter Profile
+    - social_icon: rocket
+      new_window: true
+      link: https://ezploy.io/
+      name: Ezploy.io
+
 twitter_username: falexandrou
 github_username:  falexandrou
 facebook_username:  falexandrou
-linkedin_profile: http://gr.linkedin.com/in/falexandrou
+stackoverflow_profile: https://stackoverflow.com/users/story/131384
+linkedin_profile: https://www.linkedin.com/in/falexandrou
 google_analytics: "UA-70676378-1"
 
 # Build settings
@@ -17,5 +45,16 @@ paginate: 15
 timezone: Europe/Athens
 exclude: ["node_modules", "vendor"]
 
-# Plugins
-gems: [ "jekyll-mentions", "jekyll-sitemap", "jemoji", "jekyll-paginate" ]
+gems:
+  - "jekyll-feed"
+  - "jekyll-seo-tag"
+  - "jekyll-paginate"
+  - "jekyll-sitemap"
+  - "jemoji"
+
+# Jekyll SEO Tag
+webmaster_verifications:
+  google: # 1234
+  bing: # 1234
+  alexa: # 1234
+  yandex: # 1234
