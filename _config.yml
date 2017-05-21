@@ -12,6 +12,10 @@ author:
   email: alfotis@yahoo.gr
   twitter: falexandrou
 
+collections:
+  work:
+    output: true
+
 data:
   social:
     - social_icon: github
@@ -41,7 +45,7 @@ google_analytics: "UA-70676378-1"
 # Build settings
 markdown: kramdown
 permalink: pretty
-paginate: 15
+paginate: 5
 timezone: Europe/Athens
 exclude: ["node_modules", "vendor"]
 

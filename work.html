@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div id="main">
+  {% for post in site.work %}
+  <article>
+      <header>
+        <h2>
+          {{ post.title }}
+        </h2>
+        <p class="post-meta">{{ post.work_type }} - {{ post.work_period }}</p>
+      </header>
+      <figure class="aspect-ratio retina portfolio-image">
+        <img src="/img/work/{{ post.image }}" alt="{{ post.title }}">
+      </figure>
+      <section class="content">
+        {{ post.content | strip_html | truncatewords: 40 }}
+      </section>
+      <footer>
+        <ul class="unstyled">
+          <li>Stack • {{ post.tech_stack }}</li>
+        </ul>
+      </footer>
+  </article>
+  {% endfor %}
+</div>
