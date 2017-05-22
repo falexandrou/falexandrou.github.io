@@ -2,21 +2,20 @@
 layout: default
 ---
 <div id="main">
-  {% for post in site.work %}
-  <article>
+  {% assign work_items = site.work | sort: 'order' %}
+  {% for post in work_items reversed %}
+  <article class="experience-item">
       <header>
         <h2>
           {{ post.title }}
         </h2>
         <p class="post-meta">{{ post.work_type }} - {{ post.work_period }}</p>
       </header>
-      <figure class="aspect-ratio retina portfolio-image">
-        <img src="/img/work/{{ post.image }}" alt="{{ post.title }}">
-      </figure>
-      <section class="content">
-        {{ post.content | strip_html | truncatewords: 40 }}
+      <figure class="aspect-ratio retina portfolio-image" style="background-image: url('/img/work/{{ post.image }}')"></figure>
+      <section>
+        {{ post.content }}
       </section>
-      <footer>
+      <footer class="work-details">
         <ul class="unstyled">
           <li>Stack • {{ post.tech_stack }}</li>
         </ul>

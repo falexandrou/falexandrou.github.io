@@ -1778,4 +1778,15 @@ ul.unstyled li {
 
 .portfolio-image {
   margin-bottom: 1em;
+  background-size: cover;
+}
+
+.experience-item {
+  border-top: 1px solid #efefef;
+  padding-top: 1.5em;
+}
+
+.experience-item:first-child {
+  border-top: none;
+  padding-top: 0;
 }
