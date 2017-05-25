@@ -4,7 +4,7 @@ url: "https://www.falexandrou.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: "UA-70676378-1"
 description: >
-  Tales of a Web Developer
+  Personal Blog & Work Samples. Technical posts, tutorials & personal opinions about the Developer's life
 
 # Author details for the jekyll-seo-tag gem
 author:
