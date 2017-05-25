@@ -1,7 +1,7 @@
 ---
 title: Contractor for Douleutaras.gr
 tech_stack: TypeScript, JavaScript, Angular, Django, Gulp, NPM
-work_type: One-off Project
+work_type: Contract
 work_period: January 2017 - June 2017
 image: douleutaras.jpg
 order: 12
