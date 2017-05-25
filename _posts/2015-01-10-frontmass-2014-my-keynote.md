@@ -9,5 +9,5 @@ Right before Christmas 2014, the [SKGtech](http://skgtech.io){:target="_blank"} 
 My main points were how to effectively use tooling such as `vagrant`, `git` and `docker` to boost your productivity.
 
 <div class="aspect-ratio four-by-three">
-  <iframe src="/frontmass14" frameborder="0"></iframe>  
+  <iframe src="{{ '/frontmass14' | prepend: site.baseurl | prepend: site.url }}" frameborder="0"></iframe>  
 </div>
