@@ -12,6 +12,18 @@ author:
   email: alfotis@yahoo.gr
   twitter: falexandrou
 
+defaults:
+  - scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+  - scope:
+      path: ""      # empty string for all files
+      type: work   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+
 collections:
   work:
     output: true
