@@ -515,7 +515,7 @@ input[type="radio"] + label:before {
 	}
 
 	.image.left, .image.right {
-		max-width: 40%;
+		max-width: 45%;
 	}
 
 		.image.left img, .image.right img {
@@ -1221,6 +1221,16 @@ input[type="button"],
 		width: 50%;
 	}
 
+    .poptrox-popup .nav-next:hover,
+    .poptrox-popup .nav-previous:hover {
+      opacity: .5;
+    }
+
+    .poptrox-popup .nav-next > div,
+    .poptrox-popup .nav-previous > div {
+      text-indent: -999em;
+    }
+
 		.poptrox-popup .nav-next:before,
 		.poptrox-popup .nav-previous:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -1241,7 +1251,7 @@ input[type="button"],
 			position: absolute;
 			text-align: center;
 			top: 50%;
-			width: 1.5em;
+			width: .5em;
 		}
 
 	.poptrox-popup .nav-next {
@@ -1789,4 +1799,23 @@ ul.unstyled li {
 .experience-item:first-child {
   border-top: none;
   padding-top: 0;
+}
+
+.clear {
+  float: none;
+  clear: both;
+  display: block;
+  height: 0;
+}
+
+iframe {
+  margin-bottom: 20px;
+}
+
+.m-b-1 {
+  margin-bottom: 1em;
+}
+
+.m-b-2 {
+  margin-bottom: 2em;
 }

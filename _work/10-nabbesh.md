@@ -9,4 +9,4 @@ type_tags: full_time, remote
 link: https://www.nabbesh.com/
 ---
 
-Lead Frontend Developer in [nabbesh.com](https://www.nabbesh.com){:target => "_blank"}, the leading freelance marketplace in Middle-East and North Africa. Led the redesign project, launched a new style-guide, built product features, automated tests, marketing pages. Also contributed as a DevOps Engineer by moving our infrastructure to AWS.
+Lead Frontend Developer in [nabbesh.com](https://www.nabbesh.com){:target="_blank"}, the leading freelance marketplace in Middle-East and North Africa. Led the redesign project, launched a new style-guide, built product features, automated tests, marketing pages. Also contributed as a DevOps Engineer by moving our infrastructure to AWS.
