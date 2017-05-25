@@ -2,6 +2,9 @@
 layout: default
 ---
 <div id="main">
+  <h1>My Work</h1>
+  <p>Here's some work I've done over the years. It's not all of the work I did, but it's a fairly representative list. Let's <a href="/contact">start a discussion</a> if you find my work interesting</p>
+
   {% assign work_items = site.work | sort: 'order' %}
   {% for post in work_items reversed %}
   <article class="experience-item">
@@ -9,7 +12,7 @@ layout: default
         <h2>
           {{ post.title }}
         </h2>
-        <p class="post-meta">{{ post.work_type }} - {{ post.work_period }}</p>
+        <p class="post-meta">{{ post.work_type }} - {{ post.work_period }}{% if post.link %} - <a href="{{post.link}}" target="_blank">{{post.link}}{% endif %}</a></p>
       </header>
       <figure class="aspect-ratio retina portfolio-image" style="background-image: url('/img/work/{{ post.image }}')"></figure>
       <section>
