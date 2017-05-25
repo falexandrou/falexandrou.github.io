@@ -1,4 +1,5 @@
 ---
+layout: work
 title: Lead Frontend Developer at Nabbesh
 tech_stack: React.js, JavaScript, Python, Django, Elasticsearch, Sass, py.test, AWS, Docker, Terraform
 work_type: Remote, Full time

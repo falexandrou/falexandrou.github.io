@@ -1,4 +1,5 @@
 ---
+layout: work
 title: Contractor for spitogatos.gr
 tech_stack: PHP, CodeIgniter, CSS, JavaScript, Git, SVN
 work_type: Contract

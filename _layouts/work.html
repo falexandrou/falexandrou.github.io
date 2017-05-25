@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div id="main">
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">
+    {{ page.work_type }} - {{ page.work_period }}{% if page.link %} - <a href="{{page.link}}" target="_blank">{{page.link}}</a>{% endif %}
+  </p>
+  <figure class="aspect-ratio retina portfolio-image" style="background-image: url('/img/work/{{ page.image }}')"></figure>
+  <section>
+    {{ page.content }}
+  </section>
+  <footer class="work-details m-b-2">
+    <ul class="unstyled">
+      <li>Stack • {{ page.tech_stack }}</li>
+    </ul>
+  </footer>
+  <h3>
+    <a href="/work">Back to the full list of work samples</a>
+  </h3>
+</div>

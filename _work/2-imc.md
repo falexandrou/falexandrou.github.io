@@ -1,4 +1,5 @@
 ---
+layout: work
 title: Contractor for IMC
 tech_stack: PrestaShop, PHP, CodeIgniter, CSS, JavaScript, jQuery, Integrations, ERP, CRM
 work_type: Contract

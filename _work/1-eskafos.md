@@ -1,4 +1,5 @@
 ---
+layout: work
 title: Co-Founder & Developer at E-skafos.gr
 tech_stack: PHP, JavaScript, CSS
 work_type: Remote, Full Time

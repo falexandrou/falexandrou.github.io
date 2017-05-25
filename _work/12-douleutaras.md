@@ -1,4 +1,5 @@
 ---
+layout: work
 title: Contractor for Douleutaras.gr
 tech_stack: TypeScript, JavaScript, Angular, Django, Gulp, NPM
 work_type: Contract

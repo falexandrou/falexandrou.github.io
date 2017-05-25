@@ -1,4 +1,5 @@
 ---
+layout: work
 title: EuroLeague API integration for eurohoops.net
 tech_stack: WordPress, PHP, API
 work_type: One-off project

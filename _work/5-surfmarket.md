@@ -1,4 +1,5 @@
 ---
+layout: work
 title: Surfmarket - e-Commerce website for x2interactive.gr
 tech_stack: Prestashop, PHP, CSS, JavaScript, Integrations
 work_type: One-off Project

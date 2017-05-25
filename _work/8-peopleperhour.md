@@ -1,4 +1,5 @@
 ---
+layout: work
 title: Senior Web Developer at PeoplePerHour
 tech_stack: Yii, MySQL, Solr, JavaScript, LESS, HTML5, Micro Services, Vagrant, AWS, PHPUnit, Codeception
 work_type: On-site, Athens

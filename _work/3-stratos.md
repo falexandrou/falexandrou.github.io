@@ -1,4 +1,5 @@
 ---
+layout: work
 title: Hotel Website for x2interactive.gr
 tech_stack: PHP, CSS, JavaScript, Integrations
 work_type: One-off Project

@@ -1,4 +1,5 @@
 ---
+layout: work
 title: Contractor for x2interactive.gr
 tech_stack: PHP, CodeIgniter, CSS, JavaScript, jQuery, Integrations
 work_type: Contract

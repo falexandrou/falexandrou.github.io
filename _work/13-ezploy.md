@@ -1,4 +1,5 @@
 ---
+layout: work
 title: ezploy.io
 tech_stack: React.js, Node.js, Ruby on Rails, RSpec, AWS, Terraform, Docker
 work_type: Personal Project
