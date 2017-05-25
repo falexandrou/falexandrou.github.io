@@ -12,11 +12,11 @@ You can find the material I've prepared on [gitcompanion.github.io](http://gitco
 
 <div class="js-gallery">
   <a href="/img/posts/git-1.jpg">
-    <img src="/img/posts/git-1.jpg" class="thumb left image" title="Training in progress" alt="Training in progress">
+    <img src="/img/posts/git-1.jpg" class="thumb left image" alt="Training in progress">
   </a>
   <a href="/img/posts/git-2.jpg">
-    <img src="/img/posts/git-2.jpg" class="thumb right image" title="Training in progress" alt="Training in progress">
+    <img src="/img/posts/git-2.jpg" class="thumb right image" alt="Training in progress">
   </a>
 </div>
 
-###### Images courtesy of [Found.ation](http://thefoun dation.gr/events/educ-ation-class-git-training-101/)
+###### Images courtesy of [Found.ation](http://thefoun dation.gr/events/educ-ation-class-git-training-101/){:target="_blank"}

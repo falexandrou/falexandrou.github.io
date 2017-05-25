@@ -18,4 +18,4 @@ In June 2013 I was invited to give a talk on JoomlaDay 2013 about tools that a d
   </a>
 </div>
 
-###### Image courtesy of [JoomlaDay Greece Flickr](https://www.flickr.com/photos/joomladaygreece/9262496162/in/album-72157634594976836/)
+###### Image courtesy of [JoomlaDay Greece Flickr](https://www.flickr.com/photos/joomladaygreece/9262496162/in/album-72157634594976836/){:target="_blank"}
