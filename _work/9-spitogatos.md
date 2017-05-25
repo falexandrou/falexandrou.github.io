@@ -1,7 +1,7 @@
 ---
 title: Contractor for spitogatos.gr
 tech_stack: PHP, CodeIgniter, CSS, JavaScript, Git, SVN
-work_type: One-off Project
+work_type: Contract
 work_period: June 2013 - August 2013
 image: spitogatos.jpg
 order: 9
