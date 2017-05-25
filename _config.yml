@@ -1,6 +1,6 @@
 locale: "en-US"
 title: Fotis Alexandrou - Senior Web Developer
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://www.falexandrou.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: "UA-70676378-1"
 description: >
