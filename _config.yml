@@ -32,11 +32,11 @@ data:
   social:
     - social_icon: github
       new_window: true
-      link: https://www.github.com/falexandrou
+      link: https://github.com/falexandrou
       name: GitHub Profile
     - social_icon: linkedin
       new_window: true
-      link: https://in.linkedin.com/falexandrou
+      link: https://www.linkedin.com/in/falexandrou/
       name: LinkedIn Profile
     - social_icon: twitter
       new_window: true
