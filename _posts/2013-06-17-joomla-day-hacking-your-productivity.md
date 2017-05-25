@@ -14,7 +14,7 @@ In June 2013 I was invited to give a talk on JoomlaDay 2013 about tools that a d
 
 <div class="js-gallery">
   <a href="/img/posts/jd.jpg">
-    <img src="/img/posts/jd.jpg" class="fit image" title="Training in progress" alt="Training in progress">
+    <img src="/img/posts/jd.jpg" class="fit image" alt="JoomlaDay 2013">
   </a>
 </div>
 
