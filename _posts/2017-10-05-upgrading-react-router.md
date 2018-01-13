@@ -28,7 +28,7 @@ Last but not least you may need to spend some time refactoring your imports, sin
 #### Isomorphic rendering & data prefetching
 In order for the server side rendering to work properly we need to have all data pre-fetched and the Redux store hydrated (if you're using Redux on your stack). This is achieved by having each data-fetching component set up as follows:
 
-{% highlight javascript %}
+```javascript
 class MyComponent extends React.Component {
   static fetchData(dispatch, match) {
     // ... dispatch the appropriate actions
@@ -40,13 +40,13 @@ class MyComponent extends React.Component {
     // ...
   }
 }
-{% endhighlight %}
+```
 
 Notice how we pass `match` as the second argument of the `fetchData` function, this used to be router's `params` in previous versions, but since `params` is now a property of `match`, we pass the `match` object instead.
 
 Now, remember when we said we don't need to have a central place for your routes? That's sort of true; Not having all your routes in one place, means that each component should be able to declare Routes inside its `render` function for example, meaning that isomorphic rendering with data prefetching becomes a lot trickier. Not anymore, because now's the time to install `react-router-config` and setup a fairly big array of objects, containing all the routes in the system (hence the "sort of true" about this argument), much like that:
 
-{% highlight javascript %}
+```javascript
 module.exports = [
   {
     path: '/',
@@ -70,7 +70,7 @@ module.exports = [
     ]
   }
 ]
-{% endhighlight %}
+```
 
 Having done that, you may now use `renderRoutes` and `matchRoutes` on your server side router. You're going to match the route based on the url the user is currently at, then get the components that this route uses, apply the `fetchData` function and done!
 
@@ -86,7 +86,7 @@ matchPath(req.url, routes).then((error, redirectLocation, renderProps) => {
 
 It's now time for that `matchPath` function to retire and match your routes with the `matchRoutes` function, provided by `react-router-config`. Here's the gist of how my server side router looks after applying the changes (make sure you follow the comments in the code):
 
-{% highlight javascript %}
+```javascript
 // ...
 // import the new StaticRouter from react-router-dom and the functions described above from the config package
 import { StaticRouter } from 'react-router-dom';
@@ -126,11 +126,11 @@ module.exports = () => {
     // ...
   });
 };
-{% endhighlight %}
+```
 
 Done! Your app now renders isomorphically, with all the data pre-fetched and the Redux store hydrated. We're not entirely done though, let's just make sure that our client app is up to date, here's the gist again:
 
-{% highlight javascript %}
+```javascript
 import { BrowserRouter as Router } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 
@@ -150,23 +150,23 @@ const InitialComponent = (
 ReactDOM.render(InitialComponent, document.getElementById("app"));
 
 // ...
-{% endhighlight %}
+```
 
 
 #### Extra things to consider:
 - When using nested routes like for example `/projects/10` and then `/projects/10/member/1`, you may need to mark the first one as `exact`, otherwise you'll end up resolving unexpected components
 - On the same subject, let's say we have the following route set up
-{% highlight javascript %}
+```javascript
 <Route to="/projects/:project_id" component={Project} />
-{% endhighlight %}
+```
 and inside the `Project` component you have the following route set up:
-{% highlight javascript %}
+```javascript
   // ...
   <Switch>
     // ...
     <Route to="/projects/:project_id/collaborators/:collaborator_id" component={ProjectCollaborator} />
   </Switch>
-{% endhighlight %}
+```
 
 When visiting `/projects/5/collaborators/15`, you may not be able to access the `:component_id` param inside the `Project` component due to [this issue](https://github.com/ReactTraining/react-router/issues/5429).
 - If you've been using the `setRouteLeaveHook` hook to prompt your users before navigating away from a page, you can use the [getUserConfirmation](https://reacttraining.com/react-router/web/api/BrowserRouter/getUserConfirmation-func). Now, if you need a bit more granularity prompting your users when navigating away from a page, consider using the [Prompt](https://reacttraining.com/react-router/web/api/Prompt) component, while if you need to render a custom React component or perform a custom hook when confirming / canceling navigation, there's a [nice replacement](https://github.com/ZacharyRSmith/react-router-navigation-prompt) for that.
