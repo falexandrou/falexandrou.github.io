@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: iTerm2 + Oh My ZSH!
 header-img: "img/home-bg.jpg"
 author: Fotis

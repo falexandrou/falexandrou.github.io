@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: How GitHub Uses GitHub to Build GitHub
 header-img: "img/home-bg.jpg"
 author: Fotis
