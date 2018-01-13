@@ -1823,3 +1823,11 @@ iframe {
 .aspect-ratio {
   margin-bottom: 2em;
 }
+
+.social-share-button {
+  margin-left: 15px;
+}
+
+.social-share-button .icon {
+  margin-right: 5px;
+}
