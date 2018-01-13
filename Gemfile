@@ -8,4 +8,6 @@ group :jekyll_plugins do
 	gem 'jekyll-paginate', '1.1.0'
 	gem 'jekyll-sitemap', '1.0.0'
 	gem 'jemoji'
+  gem 'rouge'
+  gem 'pygments.rb'
 end

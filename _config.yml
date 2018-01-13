@@ -57,6 +57,7 @@ google_analytics: "UA-70676378-1"
 # Build settings
 markdown: kramdown
 permalink: pretty
+highlighter: pygments
 paginate: 5
 timezone: Europe/Athens
 exclude: ["node_modules", "vendor"]
@@ -67,6 +68,7 @@ gems:
   - "jekyll-paginate"
   - "jekyll-sitemap"
   - "jemoji"
+  - "pygments.rb"
 
 # Jekyll SEO Tag
 webmaster_verifications:
