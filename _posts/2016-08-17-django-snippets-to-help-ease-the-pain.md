@@ -11,13 +11,13 @@ In late 2015 I found myself working with Python, Django and py.test. I was tryin
 ### 1. HTML arrays in POST requests
 Coming from a background that HTML arrays (or Hashes) are posted in forms can cause some pain in Django. If for example you're coming from a Ruby on Rails or PHP background, you may have found easy to access HTML arrays by simply checking the `request` object in Rails or `$_POST` array in PHP. So, for example if you need to post the following form:
 
-```
+{% highlight html %}
 <input type="text" name="person[name]" value="John">
-```
+{% endhighlight %}
 
 In Rails for example, by accessing `request[:person][:name]` you would get the expected result, while in Django this is not the case. In order to do that, the following snippet is what you need
 
-```python
+{% highlight python %}
 import re
 def get_dict_array(post, key):
     """
@@ -39,28 +39,28 @@ def get_dict_array(post, key):
                 k = match.group(2)
                 result.update({k:value})
     return result
-```
+{% endhighlight %}
 
 ### 2. Error message overloading for Unique composite keys
 
 Let's say in your database, there is a table with a composite key, for example in a table of users' Portfolio Items, the fields `user` and `url` should be unique together. In case you need to customise the error message for when a user enters an item which already exists, then you're in for a surprise: You need to overload the model's `unique_error_message` method. Sounds dangerous? Probably because it is...
 
-```python
+{% highlight python %}
     def unique_error_message(self, model_class, unique_check):
         if model_class == type(self) and unique_check == ('user', 'url'):
             return _("There already is a portfolio item with the specific url")
         else:
             return super(MyModel, self).unique_error_message(model_class, unique_check)
-```
+{% endhighlight %}
 
 ### 3. Not able to chain scopes (use QuerySet instead of ModelManager and `objects = QuerySet.as_manager`)
 
 If you have created a model in django and you want to set a few scopes for it, you might need to use a `ModelManager`, right?
 Well, sort of... You see, chaining `ModelManager` objects can be painful, so if for example you need to have
 
-```python
+{% highlight python %}
 Users.objects.active().social_user().all()
-```
+{% endhighlight %}
 
 you might get a few not-so-clear error.
 
@@ -70,7 +70,7 @@ The most solid approach I've found, is the following:
 
  Example:
 
-```python
+{% highlight python %}
 from django.db import models
 
 class AccountQuerySet(models.QuerySet):
@@ -84,28 +84,28 @@ class Account(models.Model):
     # ... fields go here ...
     
     objects = AccountQuerySet.as_manager()
-```
+{% endhighlight %}
 
 
 ### 4. Converting `QueryDict` to plain `dict`
 Casting a `QueryDict` to a plain `dict` might sound like a trivial thing, but you need to be aware of the following caveat: `QueryDict.dict()` and `dict(QueryDict...)` return different things, as shown in the output below
 
-```python
+{% highlight python %}
 In [3]: QueryDict("utm_source=email_campaign").dict()
 Out[3]: {u'utm_source': u'email_campaign'}
 
 In [4]: dict(QueryDict("utm_source=email_campaign"))
 Out[4]: {u'utm_source': [u'email_campaign']}
-```
+{% endhighlight %}
 
 ### 5. Package seems missing even though you have just installed
 
 You have just installed a package, for example `boto` and you want to run a command, for example `fab`.
 If you receive the following error:
 
-```python
+{% highlight python %}
 ImportError: No module named boto
-```
+{% endhighlight %}
 
 all you have to do is:
 

@@ -123,6 +123,7 @@ blockquote {
 	padding: 0.5em 0 0.5em 1.5em;
 }
 
+/*
 code {
 	background: #f7f7f7;
 	border-radius: 0.35em;
@@ -132,6 +133,7 @@ code {
 	margin: 0 0.25em;
 	padding: 0.25em 0.65em;
 }
+*/
 
 pre {
 	-webkit-overflow-scrolling: touch;
@@ -142,7 +144,7 @@ pre {
 
 	pre code {
 		display: block;
-		line-height: 1.75em;
+		/*line-height: 1.75em;*/
 		padding: 1em 1.5em;
 		overflow-x: auto;
 	}
@@ -1830,4 +1832,10 @@ iframe {
 
 .social-share-button .icon {
   margin-right: 5px;
+}
+
+/* @TODO: Remove this when pygments supports es6 */
+.highlight .err {
+  color: #d0d0d0 !important; /* Name.Other */
+  background-color: inherit !important;
 }

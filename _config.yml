@@ -58,6 +58,7 @@ google_analytics: "UA-70676378-1"
 markdown: kramdown
 permalink: pretty
 highlighter: pygments
+lsi: true
 paginate: 5
 timezone: Europe/Athens
 exclude: ["node_modules", "vendor"]
