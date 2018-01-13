@@ -3,6 +3,7 @@ title: Fotis Alexandrou - Senior Web Developer
 url: "https://www.falexandrou.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: "UA-70676378-1"
+css_version: 0.1
 description: >
   Personal Blog & Work Samples. Technical posts, tutorials & personal opinions about the Developer's life
 
