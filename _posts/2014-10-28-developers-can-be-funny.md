@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Developers can actually be funny
 header-img: "img/home-bg.jpg"
 author: Fotis

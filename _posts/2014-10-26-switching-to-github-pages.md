@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Switching to Jekyll GitHub pages
 header-img: "img/home-bg.jpg"
 author: Fotis

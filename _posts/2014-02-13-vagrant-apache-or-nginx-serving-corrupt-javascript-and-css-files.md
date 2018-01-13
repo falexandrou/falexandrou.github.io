@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Vagrant Apache or nginx serving corrupt Javascript and CSS files
 header-img: "img/home-bg.jpg"
 author: Fotis

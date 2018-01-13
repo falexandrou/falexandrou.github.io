@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Hacking the way you work: My keynote on JoomlaDay 2013"
 header-img: "img/home-bg.jpg"
 author: Fotis

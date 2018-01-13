@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Hacking your workflow - FrontMass 2014 Keynote
 author: Fotis
 ---

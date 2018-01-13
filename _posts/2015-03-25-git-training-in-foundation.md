@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Git 101 - Workshop on Found.ation co-working space"
 author: Fotis
 excerpt: Workshop on Found.ation co-working space about Git

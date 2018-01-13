@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Django Snippets for everyday problems
 header-img: "img/home-bg.jpg"
 author: Fotis
