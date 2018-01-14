@@ -16,7 +16,7 @@ In order to validate my processes, I've been reading a lot about how other peopl
 
 #### Deep Work
 Deep Work is a state of mind, in which one produces work intensely and at an elite level, completely keeping away from any distraction.
-In his book, Newport starts by explaining why Deep Work is valuable and why it helps shaping today's economy. Debunks quite a few myths about today's work, such as the open space, being extremely responsive to communications etc and, being an academic himself, everything is backed by scientific proof. He then continues with the rules that apply in order to work deeply and the different approaches to it.
+In his book, Newport starts by explaining why Deep Work is valuable and why it helps shaping today's economy. It debunks quite a few myths about today's work, such as the open space, being extremely responsive to communications etc and, being an academic himself, everything is backed by scientific proof. He then continues with the rules that apply in order to work deeply and the different approaches to it.
 
 His main hypothesis is that even the most innocent distractions can be proven to be harmful and in fact there is a chapter on how our brains' neurons actually rewire themselves to be even more acceptive to distractions when we start giving into their shinny world. 
 
