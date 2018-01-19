@@ -27,3 +27,5 @@ Deep Work isn't a self-help book with a cheesy cover, it neither is a click-bait
 
 #### Bonus points
 There are quite a few videos of Newport either in TED conferences or the Google Campus. [Here](https://www.youtube.com/watch?v=qwOdU02SE0w)'s one that I've liked, which is structured around the subject of his other books
+
+You can get the book from [amazon.com](http://amzn.to/2DlSt7m), [amazon.co.uk](http://amzn.to/2DpUPFx) or [amazon.de](http://amzn.to/2Dq5eBA)
