@@ -53,7 +53,7 @@ facebook_username:  falexandrou
 stackoverflow_profile: https://stackoverflow.com/users/story/131384
 linkedin_profile: https://www.linkedin.com/in/falexandrou
 google_analytics: "UA-70676378-1"
-styles_cache_buster: "0.2"
+styles_cache_buster: "0.3"
 
 # Build settings
 markdown: kramdown
