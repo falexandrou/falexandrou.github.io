@@ -23,11 +23,15 @@ When it comes to increasing the size of an EBS volume, AWS provides clear option
     <div class="image fit"><img src="/img/posts/ebs-2.jpg" alt="EBS Volume downsize - Attach the volumes to the new instance" /></div>
 9. Make sure the file system you're trying to resize is in order by running `sudo e2fsck -f /dev/xvdf1`. If you're resizing a different partition on the drive, change the number 1 to the partition number you wish to resize.
 10. If any errors came up via the `e2fsck` command, head over to [this page](https://linux.101hacks.com/unix/e2fsck/){:target="_blank"} to get the right command for the fix. Don't panic :)
-11. We now need to shrink the filesystem to its lowest possible. This process is key for us because we're gonna use `dd` to copy the contents of the old volume bit by bit. Run `sudo resize2fs -M -p /dev/xvdf1` (or change the "1" to your corresponding partition) and make a note of the last line it will output. It will take some time, but the last line would eventually look something like:
+11. We now need to shrink the filesystem to its lowest possible. This process is key for us because we're gonna use `dd` to copy the contents of the old volume bit by bit. Run:
+    ```bash
+    sudo resize2fs -M -p /dev/xvdf1
+    ```
+    (or change the "1" to your corresponding partition) and make a note of the last line it will print. It will take some time, but the last line would eventually look something like:
     ```bash
     The filesystem on /dev/xvdf1 is now 28382183 (4k) blocks long.
     ```
-12. Convert the number of 4k blocks that the `resize2fs` command printed into MB and round it up a bit, for example 28382183 * 4 / 1024 ~= 110867, so round it up at 115000.
+12. Convert the number of 4k blocks that the `resize2fs` command printed into MB and round it up a bit, for example **28382183 * 4 / 1024 ~= 110867**, so round it up at **115000**.
 13. Copy the entire old volume device (not just the partition) to the new volume device, bit by bit so that we're certain we have both the partition table & data in the boot partition:
     ```bash
     sudo dd if=/dev/xvdf of=/dev/xvdg bs=1M count=110867
@@ -38,7 +42,7 @@ When it comes to increasing the size of an EBS volume, AWS provides clear option
         ```bash
         sudo gdisk /dev/xvdg
         ```
-        You'll be navigating to your menus by entering letters from now on
+        You'll get a greeting message and you'll be navigating to your menus by entering letters from now on. You can hit `?` if you require help at any point.
     - Hit `x` to go to extra expert options
     - Hit `e` to relocate backup data structures to the end of the disk, then hit `m` to go back to the main menu
     - Hit `i` to get the information of a partition, then `1` (the number one) to get the information for the first partition on the device
@@ -57,14 +61,14 @@ When it comes to increasing the size of an EBS volume, AWS provides clear option
     - You'll be asked what your first sector would be, add `4096`, then follow the defaults (let it allocate the rest of the disk), then add `8300` as the type (Linux Filesystem)
     - Change the partition's name to match the information you've printed before by hitting `c`, then `1` (for the first partition) and then add the name that the partition previously had (in our example `Linux`)
     - Next, change the partition's GUID by hitting `x` (to go to the expert menu), `c`, then `1` (for the first partition), then add the `Partition unique GUID` that the partition previously had (in our example `DBA66894-D218-4D7E-A33E-A9EC9BF045DB`).
-    - We're almost done: go back to main menu by hitting `m`, then `i` and then `1`. You should get something like what was printed before but now the `Partition size` should differ. If the Partition unique GUID or the Partition name are different, hit `q` and start over.
+    - We're almost done: go back to main menu by hitting `m`, then `i` and then `1`. You should get something like what was printed before except now the `Partition size` should differ. If the Partition unique GUID or the Partition name are different, hit `q` and start over.
     - If everything's set, hit `w` in order to write the partition table to the disk, `y` for confirmation and you're (finally) done!
     - Now expand your file system because we've shrunk it on step 11 by running:
         ```bash
         sudo resize2fs -p /dev/xvdg1
         ```
 15. Done! Detach both volumes, create a snapshot of the new volume and attach it to the old instance as `/dev/xvda` (root volume).
-16. Keep the old volume around for some time, and only delete it after you're 100% certain that everything is in place. The new instance can be safely terminated though
+16. Keep the old volume around for some time, and only delete it after you're 100% certain that everything is in place. The new instance can be safely terminated though, once your old instance boots up with the new volume.
 
 
 #### Bonus (panic) points
