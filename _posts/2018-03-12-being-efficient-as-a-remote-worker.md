@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Being efficient as a remote worker: a story about productivity"
+title: "Being efficient as a remote worker: a study on productivity"
 header-img: "img/home-bg.jpg"
 author: Fotis
 ---
@@ -9,7 +9,7 @@ author: Fotis
 Either as contractor or full-time employee roles, remote work is a popular trend globally as many companies prefer this type of distributed setup in order to take geographic restrictions and other limitation out of the equation that sets the path to their success. Working remotely is no different than any office job — or at least it shouldn't be — so being a remote worker myself, I thought it would be handy to document the processes I use to work & collaborate effectively as I would on an on-site job.
 
 <div class="image fit">
-  <img src="/img/posts/rw1.jpg" alt="Being efficient as a remote worker: a story about productivity">
+  <img src="/img/posts/rw1.jpg" alt="Being efficient as a remote worker: a study on productivity">
 </div>
 
 ### The workplace and dress code
