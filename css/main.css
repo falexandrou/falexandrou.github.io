@@ -1687,6 +1687,9 @@ body.is-touch .poptrox-popup .closer {
 
 article .content {
   margin-bottom: 1em;
+}
+
+p, article .content {
   color: rgb(120, 120, 120);
 }
 
