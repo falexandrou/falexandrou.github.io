@@ -2,7 +2,6 @@
 layout: post
 comments: true
 title: iTerm2 + Oh My ZSH!
-header-img: "img/home-bg.jpg"
 author: Fotis
 excerpt: A couple of great tools for you to spice up your command line
 ---

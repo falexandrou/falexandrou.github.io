@@ -2,7 +2,6 @@
 layout: post
 comments: true
 title: "How to downsize a root EBS volume on AWS"
-header-img: "img/home-bg.jpg"
 author: Fotis
 ---
 When it comes to increasing the size of an EBS volume, AWS provides clear options and [documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-modify-volume.html){:target="_blank"} for that. But what happens when you were optimistic about the usage of your root EBS volume or you've now moved most of your data to S3, Glacier or EFS? AWS doesn't give you the option to downsize your root EBS volume but luckily there's a workaround; we can just replicate our (large) volume into a smaller one, and use that as a replacement. This post is a thorough break down of all the necessary steps you need to take in order to do that:

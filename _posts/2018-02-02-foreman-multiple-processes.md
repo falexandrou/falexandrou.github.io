@@ -2,7 +2,6 @@
 layout: post
 comments: true
 title: "How to (selectively) run multiple processes with Foreman"
-header-img: "img/home-bg.jpg"
 author: Fotis
 ---
 If you're using the [foreman gem](http://ddollar.github.io/foreman/){:target="_blank"} to manage simple Procfile process setups, there will be a time where you'll just need to run 2 or 3 processes separately.

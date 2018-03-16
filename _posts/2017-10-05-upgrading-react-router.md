@@ -3,7 +3,6 @@ layout: post
 comments: true
 title: "Upgrading React Router v4 on an Isomorphic, Redux-powered React web application"
 subtitle: "Hint: It's not as hard as you may think it is"
-header-img: "img/home-bg.jpg"
 author: Fotis
 ---
 

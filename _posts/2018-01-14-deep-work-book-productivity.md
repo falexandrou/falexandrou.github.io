@@ -2,7 +2,6 @@
 layout: post
 comments: true
 title: "Deep Work by Cal Newport: The most impactful productivity read so far"
-header-img: "img/home-bg.jpg"
 author: Fotis
 ---
 #### A bit of a background

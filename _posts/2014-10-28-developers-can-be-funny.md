@@ -2,7 +2,6 @@
 layout: post
 comments: true
 title: Developers can actually be funny
-header-img: "img/home-bg.jpg"
 author: Fotis
 excerpt: Scott Hanselman being brilliant in many ways, is giving a funny presentation about JavaScript, Cloud and Web Apps
 ---

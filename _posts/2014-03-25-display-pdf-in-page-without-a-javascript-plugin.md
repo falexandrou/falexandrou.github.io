@@ -2,7 +2,6 @@
 layout: post
 comments: true
 title: Display PDF in-page without a javascript plugin
-header-img: "img/home-bg.jpg"
 author: Fotis
 excerpt: Why bother installing a jQuery plugin, when all of thisis built right inside the browser?
 ---

@@ -2,7 +2,6 @@
 layout: post
 comments: true
 title: "Being efficient as a remote worker: a study on productivity"
-header-img: "img/home-bg.jpg"
 author: Fotis
 ---
 

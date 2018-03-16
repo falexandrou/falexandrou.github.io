@@ -2,7 +2,6 @@
 layout: post
 comments: true
 title: Vagrant Apache or nginx serving corrupt Javascript and CSS files
-header-img: "img/home-bg.jpg"
 author: Fotis
 excerpt: A very common issue with nginx on Vagrant where the static files are served as corrupt
 ---
