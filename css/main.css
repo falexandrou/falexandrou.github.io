@@ -1689,7 +1689,8 @@ article .content {
   margin-bottom: 1em;
 }
 
-p, article .content {
+p, ul li, ol li,
+article .content {
   color: rgb(120, 120, 120);
 }
 
