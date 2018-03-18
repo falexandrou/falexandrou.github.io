@@ -65,7 +65,7 @@ Sharing updates with your supervisor or clients is important while working remot
 
 ### Shutdown ritual
 
-Being disconnected is key in being productive so at the end of the day in my case, I just make sure everything that was planned for the day is done, I send out any last emails that are important for the following days, plan the next day and just disconnect. I walk home and then do only what's not work related for example play board games with my daughter, have dinner with my family, read books, watch movies and sleep. I avoid checking on emails and phone (with the exception of monitoring tools that might occasionally notify me if there's a critical issue in some service that requires my attention — ie. a website is struggling or down).
+Being disconnected is key in being productive so at the end of the day in my case, I just make sure everything that was planned for the day is done, I send out any last emails that are important for the following days, plan the next day and just disconnect. I walk home and then do only what's not work related for example play board games with my daughter, have dinner with my family, read books, watch movies, study, practice and sleep. I avoid checking on emails and phone (with the exception of monitoring tools that might occasionally notify me if there's a critical issue in some service that requires my attention — ie. a website is struggling or down).
 
 <div class="image fit">
   <img src="/img/posts/rw5.jpg" alt="Don't miss out on fun and games">
