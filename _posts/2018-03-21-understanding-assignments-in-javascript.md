@@ -56,8 +56,8 @@ Now, a common misconception that people make (myself included in the past), is t
 ```javascript
 const obj = { a: 1, b: 2 };
 obj.c = 3;
-console.log(obj);
 
+console.log(obj);
 // Prints  {a: 1, b: 2, c: 3}
 ```
 
@@ -70,8 +70,8 @@ const obj = Object.freeze({
 });
 
 obj.o.cobra = true;
-console.log(obj);
 
+console.log(obj);
 // Prints { a: 1, o: { name: "G.I. Joe", cobra: true } }
 ```
 
