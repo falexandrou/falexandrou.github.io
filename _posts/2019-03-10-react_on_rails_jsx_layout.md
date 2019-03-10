@@ -17,6 +17,10 @@ class ApplicationController < ActionController::Base
   def react_layout
     'LayoutDefault'
   end
+
+  def react_layout_props
+    { user: { id: current_user.id } } # ... fill in your layout props
+  end
 end
 ```
 
@@ -27,13 +31,12 @@ Created a `ReactHelper` module with a `react_view` wrapper method, which utilize
 module ReactHelper
   def react_view viewname, props: {}, layout: nil, layout_props: {}
     layout ||= controller.react_layout
+    layout_component_props = controller.react_layout_props.merge(layout_props)
 
-    props = layout_props.merge({
+    react_component(layout, props: layout_component_props.merge({
       component: viewname,
       componentProps: props,
-    })
-
-    react_component(layout, props: props)
+    }))
   end
 end
 ```
