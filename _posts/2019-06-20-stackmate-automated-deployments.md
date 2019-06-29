@@ -17,10 +17,10 @@ but introduce commission fees to the amount paid to cloud providers, or go bare 
 to help them manage and provision their infrastructure. During calls I had with developers, I got pretty much the same answers:
 *"I'd love to be better at DevOps, but I simply don't have the time to"* or even worse... *"I hate doing DevOps, it's like a massive challenge for every project I work on"*.
 
-### Enter Stackmate.io
-Even though there are solutions available, they weren't as versatile as we needed to, they locked developers in to some vendor or they offer fully Serverless, Dockerized or Kubernetes-clusterized environments. So, here's what Stackmate does: 
+### Enter [Stackmate.io](https://stackmate.io){:target="_blank"}
+Even though there are solutions available, they weren't as versatile as we needed to, they locked developers in to some vendor or they offer fully Serverless, Dockerized or Kubernetes-clusterized environments. So, here's what [Stackmate](https://stackmate.io){:target="_blank"} does: 
 
-> #### Stackmate.io is an infrastructure & application deployment tool, that offers effortless deployments to AWS & DigitalOcean for developers who want to focus on building great apps instead of DevOps and awkward configs.
+> #### [Stackmate.io](https://stackmate.io){:target="_blank"} is an infrastructure & application deployment tool, that offers effortless deployments to AWS & DigitalOcean for developers who want to focus on building great apps instead of DevOps and awkward configs.
 
 In human terms, Stackmate analyzes the infrastructure needed by your application to run, provisions it and deploys your application's code on it,
 without you having to write a single line of code, or requiring any DevOps knowledge.
@@ -59,6 +59,8 @@ The plan is to go live by October 2019. Until then, you can join our waiting lis
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
+
+or visit our website at [Stackmate.io](https://stackmate.io){:target="_blank"}
 
 ### What Stackmate offers
 - Static sites, single or multi-tier infrastructure: Deploy a single all-in-one instance that runs your app, or multiple, load-balanced servers that connect to external managed services
