@@ -3,7 +3,7 @@ layout: work
 title: ezploy.io
 tech_stack: React.js, Node.js, Ruby on Rails, RSpec, AWS, Terraform, Docker
 work_type: Personal Project
-work_period: July 2016 - Present
+work_period: July 2016 - July 2017
 image: ezploy.jpg
 order: 13
 type_tags: full_time, personal

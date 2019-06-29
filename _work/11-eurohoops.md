@@ -7,6 +7,7 @@ work_period: December 2016
 image: eurohoops.jpg
 order: 11
 type_tags: project
+employment_type: One-off project
 link: http://nuevvo.com/
 ---
 

@@ -30,13 +30,13 @@ layout: default
       {{ content }}
     </section>
 
-    <footer class="post-footer">
-      <h2 class="footer-title">You may also like</h2>
+    <footer class="post-footer more-like-this">
+      <h3 class="footer-title">You may also like</h3>
       <div class="row">
       {% if page.previous %}
         <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt">
           <header>
-            <h3><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h3>
+            <h4><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h4>
           </header>
           <section class="content">
             {{ page.previous.content | strip_html | truncatewords: 15 | markdownify }}
@@ -52,7 +52,7 @@ layout: default
       {% if page.next %}
         <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt f-right">
           <header>
-            <h3><a href="{{ page.next.url }}">{{ page.next.title }}</a></h3>
+            <h4><a href="{{ page.next.url }}">{{ page.next.title }}</a></h4>
           </header>
           <section class="content">
             {{ page.next.content | strip_html | truncatewords: 15 | markdownify }}
@@ -68,7 +68,7 @@ layout: default
 
         <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt f-right">
           <header>
-            <h3><a href="{{ next_post.url }}">{{ next_post.title }}</a></h3>
+            <h4><a href="{{ next_post.url }}">{{ next_post.title }}</a></h4>
           </header>
           <section class="content">
             {{ next_post.content | strip_html | truncatewords: 15 | markdownify }}

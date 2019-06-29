@@ -13,10 +13,14 @@ layout: default
           <a href="{{ post.url }}">{{ post.title }}</a>
         </h2>
         <p class="post-meta">
-          {{ post.work_type }} - {{ post.work_period }}{% if post.link %} - <a href="{{post.link}}" target="_blank">{{post.link}}</a>{% endif %}
+          {{ post.work_type }}
+          {% if post.work_period %} - {{ post.work_period }}{% endif %}
+          {% if post.link %} - <a href="{{post.link}}" target="_blank">{{post.link}}</a>{% endif %}
         </p>
       </header>
-      <figure class="aspect-ratio retina portfolio-image" style="background-image: url('/img/work/{{ post.image }}')"></figure>
+      <figure class="aspect-ratio retina portfolio-image">
+        <img src="/img/work/{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+      </figure>
       <section>
         {{ post.content }}
       </section>

@@ -4,9 +4,13 @@ layout: default
 <div id="main">
   <h1>{{ page.title }}</h1>
   <p class="post-meta">
-    {{ page.work_type }} - {{ page.work_period }}{% if page.link %} - <a href="{{page.link}}" target="_blank">{{page.link}}</a>{% endif %}
+    {{ page.work_type }}
+    {% if page.work_period %} - {{ page.work_period }}{% endif %}
+    {% if page.link %} - <a href="{{page.link}}" target="_blank">{{page.link}}</a>{% endif %}
   </p>
-  <figure class="aspect-ratio retina portfolio-image" style="background-image: url('/img/work/{{ page.image }}')"></figure>
+  <figure class="aspect-ratio retina portfolio-image">
+    <img src="/img/work/{{ page.image }}" alt="{{ page.title }}" loading="lazy">
+  </figure>
   <section>
     {{ page.content }}
   </section>

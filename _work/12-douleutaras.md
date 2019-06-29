@@ -7,6 +7,7 @@ work_period: January 2017 - June 2017
 image: douleutaras.jpg
 order: 12
 type_tags: contract
+employment_type: Contract
 link: https://www.douleutaras.gr/
 ---
 
