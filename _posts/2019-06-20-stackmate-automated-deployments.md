@@ -60,7 +60,8 @@ The plan is to go live by October 2019. Until then, you can join our waiting lis
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 
-or visit our website at [Stackmate.io](https://stackmate.io){:target="_blank"}
+Also, visit our website at [Stackmate.io](https://stackmate.io){:target="_blank"}
+Follow us on [facebook](https://facebook.com/stackmate.io/){:target="_blank"}, [twitter](https://twitter.com/stackmate){:target="_blank"}, [indiehackers](https://www.indiehackers.com/product/stackmate){:target="_blank"} or upvote us on [producthunt](https://www.producthunt.com/posts/stackmate){:target="_blank"}
 
 ### What Stackmate offers
 - Static sites, single or multi-tier infrastructure: Deploy a single all-in-one instance that runs your app, or multiple, load-balanced servers that connect to external managed services
