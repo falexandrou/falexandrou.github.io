@@ -44,8 +44,8 @@ data:
       name: Twitter Profile
     - social_icon: rocket
       new_window: true
-      link: https://ezploy.io/
-      name: Ezploy.io
+      link: https://stackmate.io/
+      name: Stackmate.io
 
 twitter_username: falexandrou
 github_username:  falexandrou

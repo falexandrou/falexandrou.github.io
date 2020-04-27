@@ -8,7 +8,7 @@ author: Fotis
 
 #### The Motivation
 
-When working on the next release of [ezploy.io](https://ezploy.io){:target="_blank"} (still in the works), among the many changes I've introduced, I had to upgrade react-router to its latest stable version v4. At first I thought it was a bit of a luxury since I tried to roll out this version for a long time, but then again I thought that it would provide great benefits in terms of security, stability, flexibility and speed, so I went ahead and spent that 3-4 hours anyway; here's the story behind that.
+When working on the next release of ezploy.io (currently moved to [stackmate.io](https://stackmate.io){:target="_blank"}), among the many changes I've introduced, I had to upgrade react-router to its latest stable version v4. At first I thought it was a bit of a luxury since I tried to roll out this version for a long time, but then again I thought that it would provide great benefits in terms of security, stability, flexibility and speed, so I went ahead and spent that 3-4 hours anyway; here's the story behind that.
 
 #### First things first
 You have to carefully read the [Official migration guide](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/migrating.md){:target="_blank"} that the awesome contributors of [React Router](https://github.com/ReactTraining/react-router){:target="_blank"} have crafted.
