@@ -60,8 +60,8 @@
         <script src="https://use.typekit.net/ixr1tyt.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         {% feed_meta %}
-        {%- if page.date -%}
         <script type="application/ld+json">
+        {%- if page.date %}
         {
             "mainEntityOfPage": {
                 "@type": "WebPage",
@@ -79,8 +79,21 @@
             "datePublished":"{{ page.date | date_to_xmlschema }}",
             "@context":"http://schema.org"
         }
+        {% else %}
+        {
+            "@type": "WebSite",
+            "url": "{{ site.baseurl | prepend: site.url }}",
+            "name": "{{ site.title }}",
+            "headline": "{{ site.title }}",
+            "author": {
+                "@type":"Person",
+                "name":"{{ site.author.name }}"
+            },
+            "description":"{{ site.description | stripnewlines }}",
+            "@context":"https://schema.org"
+        }
+        {%- endif %}
         </script>
-        {%- endif -%}
 </script>
     </head>
 
