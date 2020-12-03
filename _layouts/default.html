@@ -1,12 +1,28 @@
+{%- if post.title %}
+    {% assign title = post.title | append: ' | ' | append: site.title | strip_newlines %}
+    {% assign excerpt = post.excerpt | strip_html  | truncatewords: 40 %}
+{% elsif page.title %}
+    {% assign title = page.title | append: ' | ' | append: site.title | strip_newlines %}
+    {% assign excerpt = page.content | strip_html | truncatewords: 40 %}
+{% else %}
+    {% assign title = site.title | append: ' | ' | append: site.description | strip_newlines %}
+    {% assign excerpt = site.description %}
+{% endif -%}
+{%- assign page_url = page.url | prepend: site.baseurl | prepend: site.url -%}
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <title>{{ title }}</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="{{ site.description }}">
         <meta http-equiv="content-language" content="{{ site.locale }}" />
+        <meta name="author" content="{{ site.author.name }}" />
+        {%- if post %}
+        <meta name="description" content="{{ post.excerpt | strip_html | truncatewords: 35 }}">
+        {% else %}
+        <meta name="description" content="{{ site.description | strip_newlines }}">
+        {% endif -%}
 
         <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="/css/reset.css?v={{ site.styles_cache_buster }}">
@@ -14,25 +30,28 @@
         <link rel="stylesheet" href="/css/highlighter/native.css?v={{ site.styles_cache_buster }}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+        <meta property="og:title" content="{{ title }}">
         <meta property="og:image" content="{{ "/img/me-wide.jpg" | prepend: site.baseurl | prepend: site.url }}">
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:image:width" content="720">
         <meta property="og:image:height" content="720">
+        <meta property="og:description" content="{{ excerpt }}" />
+        <meta property="og:locale" content="{{ site.locale }}" />
+        <meta property="og:url" content="{{ page_url }}" />
+        <meta property="og:site_name" content="{{ site.title }}" />
+        {%- if page.date %}
+        <meta property="og:type" content="article" />
+        <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+        {% else %}
+        <meta property="og:type" content="website" />
+        {% endif %}
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@falexandrou" />
-        {% if post %}
-        <meta name="twitter:title" content="{{ post.title }}" />
-        <meta name="twitter:description" content="{{ post.content | strip_html | truncatewords: 35 }}" />
-        {% elsif page %}
-        <meta name="twitter:title" content="{{ page.title }}" />
-        <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 35 }}" />
-        {% else %}
-        <meta name="twitter:title" content="Fotis Alexandrou - Software Engineer" />
-        <meta name="twitter:description" content="{{ site.description }}" />
-        {% endif %}
+        <meta name="twitter:title" content="{{ title }}" />
+        <meta name="twitter:description" content="{{ excerpt }}" />
         <meta name="twitter:image" content="{{ "/img/me-wide.jpg" | prepend: site.baseurl | prepend: site.url }}" />
-        <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+        <meta name="twitter:url" content="{{ page_url }}" />
 
         <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
@@ -40,9 +59,29 @@
 
         <script src="https://use.typekit.net/ixr1tyt.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-        {% seo %}
         {% feed_meta %}
+        {%- if page.date -%}
+        <script type="application/ld+json">
+        {
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "{{ site.baseurl | prepend: site.url }}"
+            },
+            "author": {
+                "@type":"Person",
+                "name":"{{ site.author.name }}"
+            },
+            "description": "{{ excerpt }}",
+            "@type":"BlogPosting",
+            "url":"{{ page_url }}",
+            "headline": "{{ title }}",
+            "dateModified": "{{ page.date | date_to_xmlschema }}",
+            "datePublished":"{{ page.date | date_to_xmlschema }}",
+            "@context":"http://schema.org"
+        }
+        </script>
+        {%- endif -%}
+</script>
     </head>
 
     <body id="top">
