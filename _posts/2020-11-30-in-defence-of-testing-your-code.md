@@ -18,7 +18,7 @@ I even remember debating the lead developer of a VC-backed startup, who at some 
 
 
 #### So, is testing our code a waste of time?
-No, it's not! Believe it or not though, this was (hopefully isn't anymore) a somehow acceptable opinion a few years back.
+**No, it's not!** Believe it or not though, this was (hopefully isn't anymore) a somehow acceptable opinion a few years back.
 While testing may require some development time, it actually helps save enormous amounts of time if done properly.
 
 Let's think of the following scenario:
@@ -39,7 +39,7 @@ Ideal? Maybe. Let's now break down the several ways we can save time.
 
 
 #### Testing is a safety net, but also a documentation and developer onboarding tool
-Usually, the scope of a function is (or should be) somehow limited and, depending on the input, there are certain outcomes.
+Usually, the scope of a function is (or should be) limited and, depending on the input, there are certain outcomes.
 Covering a few default cases, should be a nice way to test said function and save ourselves (and the QA) some time being stopped by runtime errors that would easily be prevented.
 
 If however not all cases were covered and some bug gets reported, it's fine (in fact great!) because this means we're enhancing the testing suite with another case,
@@ -77,7 +77,7 @@ def it_does_not_start_the_operation_when_another_is_queued_prior_to_it(...):
     assert operation.is_queued
 ```
 
-It's a set of tests, groupped together with descriptive names, that provide a high level overview
+We now have of tests, groupped together with descriptive names, that provide an outline
 that an operation can be started with or without a given reference, and what the expected statuses for the model in the database
 and the returned HTTP status code should be. When I revisit this example in the future, or whenever a new hire joins the project,
 it will hopefully be obvious to them, what the expected behavior should be without having to read long documentation.
@@ -129,14 +129,14 @@ but also, doing fancy things usually leads to errors and you do want your tests 
 
 #### Meet your new best friends
 In the examples provided above, I introduced a few concepts that you might not be familiar with so far, 
-but will become your new best friends when you dive deep into testing: Mocks, Fakes, Stubs, Factories and Fixtures.
+but will become your new best friends when you dive deep into testing: Factories, Fakes, Fakes, Stubs and Mocks.
 Here's some basic guidelines that would help you decide what you need each time:
 
  - If you want an object and with random data, register a factory.
  - If you need an object with specific, predictable data, go for a fixture.
- - If you need a simplified version of a method or a class, fake it.
+ - If you need a simplified version of a method or a class, with limited functionality, fake it.
  - If you need a set of predefined data returned by a method, stub it.
- - If you just need to count the calls to a method or, mock it.
+ - If you just need to count the calls to a method, mock it.
 
 
 #### How having a proper test suite improves your code
