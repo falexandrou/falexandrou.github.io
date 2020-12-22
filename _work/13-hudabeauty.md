@@ -5,7 +5,7 @@ tech_stack: AWS, DevOps
 work_type: Contract
 work_period: September 2017 - Present
 image: hudabeauty.jpg
-order: 14
+order: 13
 type_tags: contract
 link: https://hudabeauty.com/
 ---

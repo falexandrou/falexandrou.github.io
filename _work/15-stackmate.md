@@ -1,10 +1,10 @@
 ---
 layout: work
 title: Founder at Stackmate.io
-tech_stack: React, ES6, Ansible, AWS
+tech_stack: React, ES6, Python, Django, Ansible, AWS
 work_type: Personal Project
 image: stackmate.jpg
-order: 16
+order: 15
 type_tags: contract
 link: https://stackmate.io/
 ---
