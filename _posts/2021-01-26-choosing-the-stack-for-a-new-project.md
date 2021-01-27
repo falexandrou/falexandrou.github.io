@@ -108,9 +108,10 @@ so try to be cautious by making sure everything my team relies upon is current, 
 well documented, stable and most importantly, properly tested.
 
 ### If your team is small, a monolith is just fine
-I think the title is self-explanatory here, but let me explain why in a screaming Adam Sandler voice:
-because of all the duplication and networking requests and the operational maintenance your team
-has to go through. Which leads me to the next chapter:
+I think the title is self-explanatory here, but let me explain why in a screaming
+[Adam Sandler](/img/posts/as.gif){:target="_blank"} voice: because of all the duplication and
+networking requests and the operational maintenance your team has to go through. Which leads
+me to the next chapter:
 
 ### Running & maintenance costs
 There are two types of costs when working with a new technology stack: Implementation and running
