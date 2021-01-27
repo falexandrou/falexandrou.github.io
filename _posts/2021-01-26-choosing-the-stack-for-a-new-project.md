@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title: "Choosing the tech stack for a new project"
-excerpt: "Things to consider when you are creating a fresh codebase from scratch"
+title: "What to consider when choosing a new tech stack"
+excerpt: ""
 author: Fotis
 ---
 
@@ -22,22 +22,25 @@ my professional experience, mistakes and flame-wars I had been a part of, so tha
 </div>
 
 ### The right tool for the people involved
-Any tech stack will be as useful as the hours and hair it saves for the people developing on it and
+Every stack will be as useful as the hours and hair it saves for the people developing on it and
 operating it. Having said that, it's only obvious that your choice should be directly related to your
 team, whether it's present or not. Two distinct cases here, first would be that the team is already
 in place which means that the stack’s choice should be based on the team’s modus operandi and another
 one, for when the team is work in progress.
 
-When the team is already in place, the obvious choice would be to go with what they already know.
-However, there's certain fatigue after some time, or the technology that the team is already working on
+When the team is already in place or if the team consists of just yourself, the obvious choice would
+be to go with what they already know. However, there's certain fatigue after some time and people might
+lean into trying out something new, or the technology that the team is already working on
 might start to feel outdated. That's when you need to get in touch with your team leaders and really
 listen to them. Diversing your stack means that you’ll need to have people that are experts in the new
 field and besides that, you’ll have to factor in the cost for their learning, the technical debt and operations.
 There also has to be a critical mass that shares the same expertise, since you can’t rely on a single team member
-to be the source of truth.
+to be the source of truth. On the other hand, if you follow an already trusted technology stack, you
+will be able to deliver faster, the problems you will face will seem as just practice and there might
+already be a knowledge base for issues that may come up.
 
-Regarding the second case now, you're on a clean slate. You have the freedom to choose anyone, however
-I’d do some research first; I would research the developer communities for the stack choices I'd have
+Regarding the second case now, you're on a clean slate. You have the freedom to choose any person to join or
+lead your team, however I’d do some research first; I would research the developer communities for the stack choices I'd have
 in mind, then look into their rates and activity and compare it with the prospect team size I'd have in mind.
 It may sound trivia and you might think “oh! the internets will help me find candidates” but it may not
 seem as easy as it sounds. Building a development team, is actually more on making highly skilled professionals
@@ -62,12 +65,13 @@ second right from the beginning of its lifetime, you may need to bring back in t
 benchmarks we mentioned earlier. Beware, there's a trap here: if you ask the project’s shareholders
 what the traffic projections for the project are going to be, they will most likely reply with massive
 numbers and it's expected, since they're vested into the business and they aim for success. However,
-experience shows that scaling issues will come up gradually and not from day one, allowing you to 
-mitigate them which is cheaper than bullet-proofing your app to prevent them. I'm not implying you
-should violate all rules and build something that's slow, all I'm saying is don’t over-engineer the
-project and don’t build for massive scale before you wet your feet first.
+experience shows that scaling issues will come up gradually and not from day one when the project is
+not part of an already ongoing project that’s facing massive traffic, allowing you to mitigate them
+which is cheaper than bullet-proofing your app to prevent them. I'm not implying you should violate
+all rules and build something that's slow, all I'm saying is don’t over-engineer or over-provision
+the project and don’t build for massive scale before you wet your feet first.
 
-**Projects that rely on existing integrations**: Usually, the integrations that need to take place,
+**Projects that rely on integrations**: Usually, the integrations that need to take place,
 are well established software that are either deeply integrated into the project (ie. the project is
 built around a specific piece of software by using some adapter), or act as an external service, often
 via an SDK that allows communication over networking. In the first case, the technology is sort of
@@ -77,8 +81,7 @@ to use another language, so the decision is easy. In the second case, there are 
 you need to check whether there is an SDK available and whether it's a stable, fully-featured library.
 
 **Open source or portfolio projects**: These types of projects provide plenty of room for experimentation,
-and is actually the right place to show off and play around with various new technologies. I think
-it's safe to say that other criteria (see below) will apply to these projects
+and is actually the right place to show off and play around with various new technologies.
 
 <div class="image fit">
   <img src="/img/posts/tool.jpg" alt="Tools" />
@@ -90,15 +93,15 @@ One mistake most of us have ran into, when it comes to using some new technology
 the hype trap. The internet is a magical place full of potential, advertisements and hyped up new
 technologies and we, developers like to experiment with all the shiny new objects!
 
-While integrating a piece of technology into your stack, you might need to look into the maturity,
+While adding a piece of technology into your stack, you might need to look into the maturity,
 stability and documentation of it. It also has to be actively maintained and adequately documented.
-A large following on StackOverflow wouldn't hurt either.
+A large following on StackOverflow that would help you with the problems you *will* run into, wouldn't hurt either.
 
 Speaking from experience, my team once integrated a fairly young document-based database into one
-of our projects and I bet you know the favorite product owner line: “since this worked for this
+of our projects and I bet you are familiar with the product owners’ line: “since this worked for this
 feature, let’s build on top of that for the next 5 features”. Pretty soon, after torturing ourselves
 with poor adoption which leads to poor documentation online compared to its older rivals,
-this database became mission-critical but we were happy. Until one day they ran out of money
+this database became mission-critical, but we were happy. Until one day they ran out of money
 and time, and their contributors decided to jump ship, and then we were sad. We didn‘t have the time
 or resources to maintain the database ourselves of course, so we had to migrate everything into our
 existing PostgreSQL database which was introduced in 1996 and it’s still one of the most popular
@@ -106,6 +109,14 @@ open source relational database systems available. This is of course an edge cas
 happen every day, however I’ve seen frameworks, libraries and other utilities die frequently
 so try to be cautious by making sure everything my team relies upon is current, actively maintained,
 well documented, stable and most importantly, properly tested.
+
+Sometimes, using such technologies may sound boring and I’m pretty sure there will be other, fancier
+solutions that will sound much more interesting but that’s exactly the issue. Boring technologies
+are usually stable, well tested. Ruby on Rails for example, provides the same paradigms and interfaces
+for the past few years and that may seem boring. The counter-argument to that, is that it took many
+years for Rails to become “boring” and through the course of those years, thousands of commits were
+added to make the framework a stable and reliable solution that powers billion-dollar companies all
+around the world.
 
 ### If your team is small, a monolith is just fine
 I think the title is self-explanatory here, but let me explain why in a screaming
