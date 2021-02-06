@@ -56,6 +56,8 @@ What I described above might not fit your style, however it's what works for me.
 ### Work ethics quality & going that extra mile
 
 ### Cost estimation
+- Don’t charge only for the hours worked
+- Not fun when you need every client
 
 ### Being successful or even joining a marketplace is hard
 
