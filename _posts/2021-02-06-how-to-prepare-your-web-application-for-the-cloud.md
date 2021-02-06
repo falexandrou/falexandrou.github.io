@@ -109,7 +109,7 @@ need to somehow handle that, so that no job (or data) gets lost.
 
 ### Database migrations
 In the beginning of this article, we mentioned that we can’t really perform manual database updates,
-something which is an anti-pattern in general, not only cloud-based applications. In cloud enviornments
+something which is an anti-pattern in general, not only cloud-based applications. In cloud environments
 however, the database might have replicas or it can be sharded, making a manual update somehow more
 difficult.
 
