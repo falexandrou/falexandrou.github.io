@@ -56,7 +56,9 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-
+        {% if jekyll.environment == 'production' %}
+        <script defer data-domain="falexandrou.com" src="https://plausible.io/js/plausible.js"></script>
+        {% endif %}
         <script src="https://use.typekit.net/ixr1tyt.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         {% feed_meta %}
@@ -151,9 +153,5 @@
         <script src="/js/util.js"></script>
         <!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
         <script src="/js/main.js"></script>
-
-        {% if jekyll.environment == 'production' %}
-        <script defer data-domain="falexandrou.com" src="https://plausible.io/js/plausible.js"></script>
-        {% endif %}
     </body>
 </html>
