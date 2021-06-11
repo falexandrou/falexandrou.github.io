@@ -2,7 +2,6 @@ locale: "en-US"
 title: Fotis Alexandrou - Software Engineer
 url: "https://www.falexandrou.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
-google_analytics_key: "UA-70676378-1"
 description: >
   Personal Blog & Work Samples. Technical posts, tutorials & personal opinions about the Developer's life
 
@@ -52,7 +51,6 @@ github_username:  falexandrou
 facebook_username:  falexandrou
 stackoverflow_profile: https://stackoverflow.com/users/story/131384
 linkedin_profile: https://www.linkedin.com/in/falexandrou
-google_analytics: "UA-70676378-1"
 styles_cache_buster: "0.3"
 
 # Build settings
