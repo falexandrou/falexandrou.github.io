@@ -1,6 +1,6 @@
 ---
 layout: work
-title: JavaScript Engineer at Talentdesk
+title: Tech lead at TalentDesk
 tech_stack: JavaScript, ES6, React, Express.js
 work_type: Contract
 work_period: June 2018 - Present
