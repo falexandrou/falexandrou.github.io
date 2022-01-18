@@ -9,4 +9,4 @@ type_tags: contract
 link: https://stackmate.io/
 ---
 
-Founded Stackmate.io, the tool that automates infrastructure & application deployment to the cloud
+Founded Stackmate.io, a no-code cloud infrastructure & application deployment automation tool

@@ -7,7 +7,7 @@ work_period: September 2017 - Present
 image: hudabeauty.jpg
 order: 13
 type_tags: contract
-link: https://hudabeauty.com/
+link: https://www.hudabeauty.com/
 ---
-Orchestrating, managing & scaling the tech stack of the fastest growing beauy brand in the world, 
-HudaBeauty on AWS. Also, providing consulting services regarding their tech decisions. 
+Managed the AWS infrastructure, developed internal tools, moved data from WordPress to SalesForce Commerce Cloud and provided consulting for the fastest
+growing beauty brand in the world.

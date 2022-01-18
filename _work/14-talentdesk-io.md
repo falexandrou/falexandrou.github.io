@@ -9,5 +9,4 @@ order: 14
 type_tags: contract
 link: https://talentdesk.io/
 ---
-
-JavaScript Engineer for the Freelancer Management System Talentdesk
+Tech lead & Software Engineer. Designed and developed some of the system's core functionality, lead the core platform team
