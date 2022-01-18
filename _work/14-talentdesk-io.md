@@ -9,4 +9,5 @@ order: 14
 type_tags: contract
 link: https://talentdesk.io/
 ---
-Tech lead & Software Engineer. Designed and developed some of the system's core functionality, lead the core platform team
+Tech lead & Software Engineer. Designed and developed some of the system's core functionality,
+lead & hired engineers for the core platform team
