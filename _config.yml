@@ -51,7 +51,7 @@ github_username:  falexandrou
 facebook_username:  falexandrou
 stackoverflow_profile: https://stackoverflow.com/users/story/131384
 linkedin_profile: https://www.linkedin.com/in/falexandrou
-styles_cache_buster: "0.3"
+styles_cache_buster: "0.4"
 
 # Build settings
 markdown: kramdown
