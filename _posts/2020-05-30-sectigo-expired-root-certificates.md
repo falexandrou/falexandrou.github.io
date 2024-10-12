@@ -28,5 +28,3 @@ I initially thought it was some system issue but turns out it wasn't, once I ran
  - You now have a new SSL certificate in place, you can copy it over to your server or use it in your Certificate Manager (if you're using any).
 
 Hope this saved you some time.
-
-PS. Speaking of saved time, how would you like to save tons of time in your next project, by automating your infrastructure using our tool for effortless cloud deployments called [Stackmate.io](https://stackmate.io){:target="_blank"}? Join our [waiting list](https://stackmate.io/#subscribe) and we'll let you know once we launch!

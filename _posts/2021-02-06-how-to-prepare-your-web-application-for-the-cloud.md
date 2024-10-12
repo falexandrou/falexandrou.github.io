@@ -6,10 +6,7 @@ excerpt: "Structuring your web application for the cloud, some things to conside
 author: Fotis
 ---
 
-Crafting a web application that is able to run in the cloud, is a bit different than an application
-that is built to run on a single web server and some developers learn it the hard way. In order to
-avoid last-minute surprises and be well prepared for a cloud migration, here's a list of the things
-you need to consider while you’re still developing the app.
+Crafting a web application that is able to run in the cloud, is a bit different than an application that is built to run on a single web server and some developers learn it the hard way. In order to avoid last-minute surprises and be well prepared for a cloud migration, here's a list of the things you need to consider while you’re still developing the app.
 
 ### Develop a mindset first
 The first and probably the most important thing you need to develop, is a cloud mindset. We need to
