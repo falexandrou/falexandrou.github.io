@@ -1,6 +1,6 @@
 # Important: Mind the trailing slashes
-POSTS_SOURCE_DIR := "/Users/fotis/Library/Mobile Documents/com~apple~CloudDocs/Documents/Personal Blog Posts/Published/"
-POSTS_WORK_DIR := "/Users/fotis/Library/Mobile Documents/com~apple~CloudDocs/Documents/Personal Blog Posts/Work/"
+POSTS_SOURCE_DIR="/Users/fotis/Library/Mobile Documents/com~apple~CloudDocs/Documents/Blogging/Personal Blog/Published/"
+POSTS_WORK_DIR="/Users/fotis/Library/Mobile Documents/com~apple~CloudDocs/Documents/Blogging/Personal Blog/Work/"
 TARGET_POSTS_DIR := "./_posts/"
 TARGET_WORK_DIR := "./_work/"
 DATE := `date '+%Y-%m-%d %H:%M:%S'`
